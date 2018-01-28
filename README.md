@@ -9,3 +9,5 @@ Saliency map computation using pre-trained convolutional neural networks.
 example of command : 
 
 python DPSM.py -i path/to/the/picture -g 1 -m 'vgg19'
+
+run remquierments.sh to download the requiered dependencies
