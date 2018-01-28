@@ -8,6 +8,6 @@ Saliency map computation using pre-trained convolutional neural networks.
 
 example of command : 
 
-python DSBM.py -i path/to/the/picture -g 1 -m 'vgg19'
+python DSPB.py -i path/to/the/picture -g 1 -m 'vgg19'
 
 run remquierments.sh to download the requiered dependencies
