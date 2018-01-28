@@ -212,9 +212,9 @@ def main(argv):
 
 	start = timer()
 
-	sig = 3
-	layer = 1
-	m = "vgg16"
+	sig = 1
+	layer = 15
+	m = "vgg19"
 	input_image = ""
 
 	if "-g" in argv:
@@ -270,7 +270,7 @@ def main(argv):
 	smap = scipy.misc.imresize(final, (width,heigth), 'bilinear')
 	end = timer()
 	time = end - start
-	scipy.misc.imsave('out/selection3/'+(input_image.split('.')[0]).split('/')[-1]+'_sig'+str(sig)+'_layer'+str(layer)+'_'+m+'_'+str(time)+'secmap.jpg',smap)
+	scipy.misc.imsave('out/'+(input_image.split('.')[0]).split('/')[-1]+'_sig'+str(sig)+'_layer'+str(layer)+'_'+m+'_'+str(time)+'secmap.jpg',smap)
 	#scipy.misc.imsave('out/BenchmarkIMAGES/'+input_image.split('/')[-1],smap)
 	os.system('rm -rf out/bias_map.jpg')
 	print('done')
